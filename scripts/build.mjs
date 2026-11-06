@@ -252,7 +252,12 @@ function setMeta(html, selector, value) {
 function makePage(html, lang, data) {
   const p = PAGES[lang];
   const url = `${SITE}/${p.dir}`;
-  html = html.replace(/<html lang="[a-z]+"/, `<html lang="${lang}"`);
+  // data-root — путь к папке img/ относительно страницы (у /ru/ это ../)
+  const root = p.dir ? '../' : '';
+  html = html.replace(
+    /<html lang="[a-z]+"(?: data-root="[^"]*")?/,
+    `<html lang="${lang}" data-root="${root}"`,
+  );
   html = html.replace(/<title>[\s\S]*?<\/title>/, `<title>${p.title}</title>`);
   html = setMeta(html, ['name', 'description'], p.description);
   html = setMeta(html, ['name', 'author'], p.author);
