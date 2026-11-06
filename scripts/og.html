@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700;900&family=JetBrains+Mono:wght@500;600&display=block"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 1200px;
+        height: 630px;
+        overflow: hidden;
+      }
+      body {
+        position: relative;
+        padding: 64px 72px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: #eae7e0;
+        font-family: 'JetBrains Mono', monospace;
+        background:
+          radial-gradient(70% 90% at 100% 0%, rgba(255, 92, 26, 0.2), transparent 60%),
+          repeating-linear-gradient(0deg, transparent 0 39px, rgba(234, 231, 224, 0.05) 39px 40px),
+          repeating-linear-gradient(90deg, transparent 0 39px, rgba(234, 231, 224, 0.05) 39px 40px),
+          #0b0a08;
+      }
+      .top {
+        display: flex;
+        justify-content: space-between;
+        font-size: 22px;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+      }
+      .top span:first-child b {
+        color: #ff5c1a;
+      }
+      .status {
+        color: #8d887f;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        text-transform: uppercase;
+        font-size: 18px;
+        letter-spacing: 0.18em;
+      }
+      .status i {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: #ff5c1a;
+      }
+      h1 {
+        font:
+          900 104px/0.98 'Unbounded',
+          sans-serif;
+        text-transform: uppercase;
+        letter-spacing: -0.01em;
+      }
+      h1 .outline {
+        display: block;
+        color: #0b0a08;
+        -webkit-text-stroke: 5px #eae7e0;
+        paint-order: stroke fill;
+      }
+      .role {
+        margin-top: 26px;
+        font:
+          700 34px 'Unbounded',
+          sans-serif;
+      }
+      .role b {
+        color: #ff5c1a;
+      }
+      .stack {
+        font-size: 24px;
+        color: #8d887f;
+        letter-spacing: 0.04em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top">
+      <span>ilyaezy<b>.dev</b></span>
+      <span class="status"><i></i>open to work</span>
+    </div>
+    <div>
+      <h1>Ilya<span class="outline">Petrosyan</span></h1>
+      <p class="role">Senior Fullstack Developer</p>
+    </div>
+    <p class="stack">TypeScript · React · React Native · Node.js · PostgreSQL</p>
+  </body>
+</html>

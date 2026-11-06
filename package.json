@@ -1,0 +1,16 @@
+{
+  "name": "ilyaezy",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Сайт-визитка Ильи Петросян: ilyaezy.dev",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs && prettier --write index.html ru/index.html",
+    "og": "node scripts/build.mjs --og",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "prettier": "^3.9.10"
+  }
+}
