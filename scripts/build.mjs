@@ -17,7 +17,7 @@ const PAGES = {
     author: 'Ilya Petrosyan',
     title: 'Ilya Petrosyan — Senior Fullstack Developer, React Native, Node.js',
     description:
-      'Ilya Petrosyan — Senior Fullstack Developer in Moscow, building web, mobile and backend systems since 2019: TypeScript, React, React Native, Node.js, PostgreSQL.',
+      'Ilya Petrosyan — Senior Fullstack Developer building web, mobile and backend systems since 2019: TypeScript, React, React Native, Node.js, PostgreSQL.',
     ogDescription:
       'Web, mobile and backend systems with TypeScript, React, React Native and Node.js. Commercial development since 2019.',
     imageAlt: 'Ilya Petrosyan — Senior Fullstack Developer',
@@ -30,7 +30,7 @@ const PAGES = {
     author: 'Илья Петросян',
     title: 'Илья Петросян (Ilya Petrosyan) — Senior Fullstack Developer',
     description:
-      'Илья Петросян — Senior Fullstack Developer, в коммерческой разработке веб-, мобильных и backend-систем с 2019 года: TypeScript, React, React Native, Node.js. Москва.',
+      'Илья Петросян — Senior Fullstack Developer, в коммерческой разработке веб-, мобильных и backend-систем с 2019 года: TypeScript, React, React Native, Node.js.',
     ogDescription:
       'Веб-, мобильные и backend-системы на TypeScript, React, React Native и Node.js. В коммерческой разработке с 2019 года.',
     imageAlt: 'Илья Петросян — Senior Fullstack Developer',
