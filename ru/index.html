@@ -1856,6 +1856,14 @@
           <div class="proj">
             <div class="prow" role="button" tabindex="0">
               <span class="p-num">/001</span>
+              <h3 class="p-title">Submindy</h3>
+              <span class="p-cat">Продукт · приложение + backend</span
+              ><span class="p-year">2025–26</span><span class="p-arrow">→</span>
+            </div>
+          </div>
+          <div class="proj">
+            <div class="prow" role="button" tabindex="0">
+              <span class="p-num">/002</span>
               <h3 class="p-title">Glyph OCR</h3>
               <span class="p-cat">Open source · OCR на устройстве</span
               ><span class="p-year">2026</span><span class="p-arrow">→</span>
@@ -1863,7 +1871,7 @@
           </div>
           <div class="proj">
             <div class="prow" role="button" tabindex="0">
-              <span class="p-num">/002</span>
+              <span class="p-num">/003</span>
               <h3 class="p-title">Yamap Lite</h3>
               <span class="p-cat">Open source · карты</span><span class="p-year">2025–26</span
               ><span class="p-arrow">→</span>
@@ -1871,7 +1879,7 @@
           </div>
           <div class="proj">
             <div class="prow" role="button" tabindex="0">
-              <span class="p-num">/003</span>
+              <span class="p-num">/004</span>
               <h3 class="p-title">Renova</h3>
               <span class="p-cat">InsurTech · приложение для застрахованных</span
               ><span class="p-year">2023</span><span class="p-arrow">→</span>
@@ -1879,7 +1887,7 @@
           </div>
           <div class="proj">
             <div class="prow" role="button" tabindex="0">
-              <span class="p-num">/004</span>
+              <span class="p-num">/005</span>
               <h3 class="p-title">NissiSpace</h3>
               <span class="p-cat">EdTech · LMS · приложение + backend</span
               ><span class="p-year">2021</span><span class="p-arrow">→</span>
@@ -1887,7 +1895,7 @@
           </div>
           <div class="proj">
             <div class="prow" role="button" tabindex="0">
-              <span class="p-num">/005</span>
+              <span class="p-num">/006</span>
               <h3 class="p-title">SnapBooks</h3>
               <span class="p-cat">FinTech · AI-бухгалтерия</span><span class="p-year">2021</span
               ><span class="p-arrow">→</span>
@@ -1895,7 +1903,7 @@
           </div>
           <div class="proj">
             <div class="prow" role="button" tabindex="0">
-              <span class="p-num">/006</span>
+              <span class="p-num">/007</span>
               <h3 class="p-title">MyCointainer</h3>
               <span class="p-cat">Crypto · стейкинг</span><span class="p-year">2019–21</span
               ><span class="p-arrow">→</span>
@@ -2231,6 +2239,7 @@
         const ASSET_ROOT = document.documentElement.dataset.root || '';
         const IMG = Object.fromEntries(
           Object.entries({
+            submindy: 'submindy.jpg',
             glyph: 'glyph.jpg',
             yamap: 'yamap.jpg',
             renova: 'renova.jpg',
@@ -2248,6 +2257,53 @@
         const PROJECTS = [
           {
             num: '001',
+            media: { t: 'img', src: IMG.submindy, alt: 'Submindy' },
+            title: 'Submindy',
+            year: '2025–26',
+            org: 'Submindy',
+            cat: { ru: 'Продукт · приложение + backend', en: 'Product · app + backend' },
+            desc: {
+              ru: 'Submindy — приложение-напоминалка о платежах, подписках, привычках и делах для iOS и Android: напоминает заранее и в день оплаты, отмечает оплату в одно касание и показывает, куда уходят деньги за месяц. Собственный продукт целиком: мобильное приложение, backend, лендинг submindy.com и прод-сервер — от архитектуры до публикации в App Store и Google Play.',
+              en: 'Submindy is an iOS and Android app that reminds you about bills, subscriptions, habits and tasks — ahead of time and on the due date — lets you mark a bill paid in one tap and shows where your money goes each month. My own product end to end: the mobile app, the backend, the submindy.com landing page and the production server — from architecture to App Store and Google Play release.',
+            },
+            role: {
+              ru: 'Автор продукта: приложение, backend, инфраструктура',
+              en: 'Sole author: app, backend, infrastructure',
+            },
+            facts: {
+              ru: [
+                'backend на NestJS: API, планировщик и push-воркер на BullMQ, пуши через FCM на iOS и Android',
+                'PostgreSQL + PgBouncer, Prisma, Redis; Docker Compose, Caddy, алерты в Telegram',
+                'виджеты на главный экран и экран блокировки: WidgetKit на Swift и App Widget на Kotlin',
+                'вход по коду из письма, PIN и Face ID, синхронизация между устройствами; 10 языков',
+              ],
+              en: [
+                'NestJS backend: API, scheduler and BullMQ push worker, FCM pushes on iOS and Android',
+                'PostgreSQL + PgBouncer, Prisma, Redis; Docker Compose, Caddy, Telegram alerts',
+                'Home and Lock Screen widgets: WidgetKit in Swift and App Widget in Kotlin',
+                'email one-time-code sign-in, PIN and Face ID, sync across devices; 10 languages',
+              ],
+            },
+            stack: [
+              'React Native',
+              'TypeScript',
+              'MobX',
+              'Skia',
+              'NestJS',
+              'PostgreSQL',
+              'Prisma',
+              'Redis',
+              'BullMQ',
+              'Firebase',
+              'Swift',
+              'Kotlin',
+              'Next.js',
+              'Docker',
+            ],
+            links: [{ l: 'submindy.com', u: 'https://submindy.com/' }],
+          },
+          {
+            num: '002',
             media: {
               t: 'img',
               src: IMG.glyph,
@@ -2296,7 +2352,7 @@
             ],
           },
           {
-            num: '002',
+            num: '003',
             media: {
               t: 'img',
               src: IMG.yamap,
@@ -2340,7 +2396,7 @@
             ],
           },
           {
-            num: '003',
+            num: '004',
             media: { t: 'img', src: IMG.renova, alt: 'Renova' },
             title: 'Renova',
             year: '2023',
@@ -2388,7 +2444,7 @@
             ],
           },
           {
-            num: '004',
+            num: '005',
             media: { t: 'img', src: IMG.nissi, fit: true, frame: true, alt: 'NissiSpace' },
             title: 'NissiSpace',
             year: '2021',
@@ -2430,7 +2486,7 @@
             ],
           },
           {
-            num: '005',
+            num: '006',
             media: { t: 'img', src: IMG.snap, fit: true, alt: 'SnapBooks' },
             title: 'SnapBooks',
             year: '2021',
@@ -2460,7 +2516,7 @@
             ],
           },
           {
-            num: '006',
+            num: '007',
             media: { t: 'logo', src: IMG.myc, w: '24%', rnd: true, alt: 'MyCointainer' },
             title: 'MyCointainer',
             year: '2019–21',
